@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_mapa"
+        android:icon="@drawable/img_btn_mapa"
+        android:title="@string/title_map" />
+
+    <item
+        android:id="@+id/navigation_ins"
+        android:icon="@drawable/img_btn_planeta_esri"
+        android:title="@string/title_ins" />
+
+</menu>

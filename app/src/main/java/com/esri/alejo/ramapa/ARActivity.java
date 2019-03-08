@@ -118,7 +118,7 @@ public class ARActivity extends AppCompatActivity
 
     final float radioBuffer = (float) 300;//radio de buffer//modificar puede ser en radianes
 
-    private FeatureLayer restaurantes, parqueaderos, hoteles;
+    private FeatureLayer policia, hospitales2;
     private LayerList layers;
     //obtener posicion
     private Point posicion;
@@ -196,8 +196,8 @@ public class ARActivity extends AppCompatActivity
                         //Toast.makeText(vistaMapLittle.getContext(),"despues consulta",Toast.LENGTH_LONG).show();
                         LayerList layers = mapaLittle.getOperationalLayers();
                         if(!layers.isEmpty()){
-                            parqueaderos = (FeatureLayer) layers.get(0);
-                            restaurantes = (FeatureLayer) layers.get(1);
+                            policia = (FeatureLayer) layers.get(0);
+                            hospitales2 = (FeatureLayer) layers.get(1);
                         }
                         if(mapaLittle.getInitialViewpoint() != null){
                             vistaMapLittle.setViewpoint(mapaLittle.getInitialViewpoint());
@@ -259,9 +259,6 @@ public class ARActivity extends AppCompatActivity
     private void processIdentifyFeatureResult(Feature feature, LayerContent content){
         String nombre = "", direccion = "", foto = "";
         switch (content.getName()){
-            case "Bancos":
-                nombre = (String) feature.getAttributes().get("Banco");
-                break;
             case "EstacionesPolicia":
                 Toast.makeText(this,"parqu",Toast.LENGTH_LONG).show();
                 nombre = (String) feature.getAttributes().get("Nombre");
@@ -279,8 +276,8 @@ public class ARActivity extends AppCompatActivity
                     }
                 }
                 break;
-            case "Restaurantes":
-                nombre = (String) feature.getAttributes().get("Restaurante");
+            case "Hospitales":
+                nombre = (String) feature.getAttributes().get("Nombre");
                 break;
         }
     }

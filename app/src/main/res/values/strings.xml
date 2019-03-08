@@ -10,10 +10,7 @@
     <string name="URL_mapa_alrededores">http://geogeeks2.maps.arcgis.com/home/item.html?id=7c5a027613564354b9b6919c2a81929b</string>
     <string name="URL_capa_policias">https://services.arcgis.com/8DAUcrpQcpyLMznu/arcgis/rest/services/EstacionesPolicia/FeatureServer/0</string>
     <string name="URL_capa_hospitales">https://services.arcgis.com/8DAUcrpQcpyLMznu/arcgis/rest/services/HospitalesAr/FeatureServer/0</string>
-    <!--0724943db1265a922599d08f08dccee9 hospitales-->
-    <!--7fdeeb2d670cdcfa2ac65f8669ba40e2 policia-->
-    <!--9f45696faf0540669df78a2bc67a466b dos capas-->
-    <!--tiendas musica fd0e77bb5051477eb58b6ece6b560fb0-->
+
     <string name="map_search_placeholder">Ejemplo,  calle 90 13 40 Bogotá</string>
     <string name="title_activity_ar">ARActivity</string>
 
